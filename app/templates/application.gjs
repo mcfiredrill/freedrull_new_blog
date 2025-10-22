@@ -1,4 +1,5 @@
 import { pageTitle } from 'ember-page-title';
+import PostList from 'freedrull-new-blog/components/post-list';
 
 <template>
   {{pageTitle "Freedrull Hamburger Salaryman"}}
@@ -27,5 +28,7 @@ import { pageTitle } from 'ember-page-title';
   </p>
 
   latest blag:
+
+  <PostList />
 
 </template>
