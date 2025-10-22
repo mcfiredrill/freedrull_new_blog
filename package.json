@@ -23,7 +23,8 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "start": "vite",
-    "test": "vite build --mode development && ember test --path dist"
+    "test": "vite build --mode development && ember test --path dist",
+    "test:ember": "vite build --mode test && ember test --path dist"
   },
   "exports": {
     "./tests/*": "./tests/*",
@@ -88,5 +89,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "ember-addon": {
+    "type": "app",
+    "version": 2
   }
 }

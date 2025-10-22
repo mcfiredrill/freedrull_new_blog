@@ -3,7 +3,9 @@ import { pageTitle } from 'ember-page-title';
 <template>
   {{pageTitle "FreedrullNewBlog"}}
 
-  <h1>firedrill/freedrull</h1>
+  <h1 class="text-3xl font-bold underline">
+    firedrill/freedrull
+  </h1>
 
   <nav>
     <ul>
