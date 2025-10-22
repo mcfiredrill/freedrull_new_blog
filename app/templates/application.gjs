@@ -1,13 +1,15 @@
 import { pageTitle } from 'ember-page-title';
 
 <template>
-  {{pageTitle "FreedrullNewBlog"}}
+  {{pageTitle "Freedrull Hamburger Salaryman"}}
 
-  <h1 class="text-3xl font-bold underline">
+  <h1 class="font-debussy text-3xl">
     firedrill/freedrull
   </h1>
 
-  <nav>
+  <img src="/assets/images/me_scary.jpg" />
+
+  <nav class="m-2">
     <ul>
       <li>works</li>
       <li>music</li>

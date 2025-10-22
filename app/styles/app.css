@@ -1,3 +1,22 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'debussy';
+  src:
+    url('/assets/fonts/hinted-Debussy.woff2') format('woff2'),
+    url('/assets/fonts/hinted-Debussy.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-debussy: "debussy", sans-serif;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
