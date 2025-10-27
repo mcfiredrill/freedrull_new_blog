@@ -11,6 +11,6 @@ import PostList from 'freedrull-new-blog/components/post-list';
 
   latest blag:
 
-  <PostList />
+  <PostList @posts={{@model}} />
 
 </template>

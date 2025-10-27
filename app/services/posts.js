@@ -1,24 +1,38 @@
 import Service from '@ember/service';
 import matter from 'front-matter';
 import { marked } from 'marked';
-
-// Import all markdown files from _posts folder
-const postFiles = import.meta.glob('../_posts/*.md', { eager: true, as: 'raw' });
+import { tracked } from '@glimmer/tracking';
 
 export default class PostsService extends Service {
-  getAll() {
-    let posts = Object.entries(postFiles).map(([path, rawContent]) => {
-      const { attributes, body } = matter(rawContent);
-      return {
+  @tracked allPosts = [];
+
+  async getAll() {
+    if(this.allPosts.length) return this.allPosts;
+
+    // Import all markdown files from _posts folder
+    const postFiles = import.meta.glob('../_posts/*.md', { as: 'raw' });
+    let posts = []
+
+    // let posts = Object.entries(postFiles).map(([path, rawContent]) => {
+    for (let [path, loader] of Object.entries(postFiles)) {
+      let content = await loader();
+      const { attributes, body } = matter(content);
+      let slug = path.split('/').pop().replace('.md', '');
+      posts.push({
         ...attributes,
         body: marked(body),
-        path,
-      };
-    });
+        slug,
+      });
+    }
 
     // Sort by date descending
-    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    this.allPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    return posts;
+    return this.allPosts;
+  }
+
+  async getBySlug(slug) {
+    let all = await this.getAll();
+    return all.find(p => p.slug === slug);
   }
 }
