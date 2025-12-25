@@ -8,10 +8,10 @@ import { LinkTo } from '@ember/routing';
     firedrill/freedrull
   </h1>
 
-  <img src="/assets/images/me_scary.jpg" />
+  <img style="height: 2rem;" src="/assets/images/me_scary.jpg" />
 
-  <nav class="m-2">
-    <ul>
+  <nav class="m-2 bg-pink-300 text-white">
+    <ul class="inline">
       <li><LinkTo @route="projects">works</LinkTo></li>
       <li>music</li>
       <li>blag</li>
