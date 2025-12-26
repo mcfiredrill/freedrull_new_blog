@@ -33,6 +33,8 @@ export default class PostsService extends Service {
 
   async getBySlug(slug) {
     let all = await this.getAll();
-    return all.find(p => p.slug === slug);
+    const p = all.find(p => p.slug === slug);
+    console.log(p.body);
+    return p;
   }
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "wificellphonekidz - mini box meal"
 date: 2024-08-23
 categories: [music]
 image: "/assets/images/wifi_mini_box_meal.png"

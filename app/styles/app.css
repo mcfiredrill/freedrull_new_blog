@@ -1,5 +1,4 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
-@import url("tailwindcss");
+@import 'tailwindcss';
 
 @font-face {
   font-family: debussy;
@@ -15,7 +14,7 @@
   --font-debussy: "debussy", sans-serif;
 }
 
+  img {
+    @apply max-h-64 object-contain;
+  }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

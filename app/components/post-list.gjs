@@ -1,7 +1,7 @@
 import { LinkTo } from '@ember/routing';
 
 <template>
-  <ul>
+  <ul class="m-2 p-2">
     {{#each @posts as |post|}}
       <li class="mb-8">
         <h2 class="text-2xl font-bold">

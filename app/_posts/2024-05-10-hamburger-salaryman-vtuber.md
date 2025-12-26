@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "hamaburger salaryman vtuber 1.0"
 date: 2024-05-10
 categories: [vtuber, programming]
 image: "/assets/images/hamburger-salaryman-vtube.png"

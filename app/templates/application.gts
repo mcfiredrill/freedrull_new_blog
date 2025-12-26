@@ -5,7 +5,7 @@ import { LinkTo } from '@ember/routing';
   {{pageTitle "Freedrull Hamburger Salaryman"}}
 
   <h1 class="font-debussy text-3xl">
-    firedrill/freedrull
+    <a href="/">firedrill/freedrull</a>
   </h1>
 
   <img style="height: 2rem;" src="/assets/images/me_scary.jpg" />

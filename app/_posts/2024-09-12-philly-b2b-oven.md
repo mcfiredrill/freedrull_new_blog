@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "b2b with oven in philly"
 date: 2024-09-12
 categories: [music]
 image: "/assets/images/fruitslatenite_09122024.gif"

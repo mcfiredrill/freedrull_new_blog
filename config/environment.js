@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'freedrull-new-blog',
+    modulePrefix: 'tailwind',
     environment,
     rootURL: '/',
     locationType: 'history',

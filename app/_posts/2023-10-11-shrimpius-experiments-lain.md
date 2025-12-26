@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "shrimpius vtuber - shrimptuber"
 date: 2023-10-11
 categories: [vtuber, programming]
 image: "/assets/images/shrimpius.png"

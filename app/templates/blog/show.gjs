@@ -3,11 +3,14 @@ import { LinkTo } from '@ember/routing';
 
 <template>
   {{pageTitle @model.title}}
-  {{outlet}}
   <article class="prose lg:prose-xl mx-auto">
-    <h1>{{@model.title}}</h1>
+    <h1 class="text-2xl font-bold">
+      <LinkTo @model={{@model.slug}} @route="blog.show" class="text-pink-600 hover:underline">
+        {{@model.title}}
+      </LinkTo>
+    </h1>
     <p class="text-gray-500">{{@model.date}}</p>
-    <div class="my-6" {{@model.body}}></div>
+    <div class="mt-2">{{{@model.body}}}</div>
     <div>
       Categories:
       {{#each @model.categories as |cat|}}

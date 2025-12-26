@@ -1,5 +1,5 @@
-import Application from 'freedrull-new-blog/app';
-import config from 'freedrull-new-blog/config/environment';
+import Application from 'tailwind/app';
+import config from 'tailwind/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';
