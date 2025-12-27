@@ -1,4 +1,4 @@
-import PostList from 'tailwind/components/post-list';
+import PostList from 'freedrull_blog/components/post-list';
 
 <template>
   check out this cool 3d animation in the background

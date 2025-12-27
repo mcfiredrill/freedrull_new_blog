@@ -1,5 +1,5 @@
 import EmberRouter from '@embroider/router';
-import config from 'tailwind/config/environment';
+import config from 'freedrull_blog/config/environment';
 
 export default class Router extends EmberRouter {
   location = config.locationType;
