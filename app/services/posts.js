@@ -37,4 +37,26 @@ export default class PostsService extends Service {
     console.log(p.body);
     return p;
   }
+
+  async getPage(page = 1, perPage = 5) {
+    const all = await this.getAll();
+
+    const total = all.length;
+    const totalPages = Math.ceil(total / perPage);
+
+    if (page < 1) page = 1;
+    if (page > totalPages) page = totalPages;
+
+    const start = (page - 1) * perPage;
+    const end = start + perPage;
+    const posts = all.slice(start, end);
+
+    return {
+      posts,
+      page,
+      perPage,
+      total,
+      totalPages,
+    };
+  }
 }

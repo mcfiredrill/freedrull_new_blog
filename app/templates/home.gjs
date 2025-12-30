@@ -10,7 +10,7 @@ import PostList from 'freedrull_blog/components/post-list';
   </p>
 
   latest blag:
-
-  <PostList @posts={{@model}} />
+  {{log @model}}
+  <PostList @posts={{@model.posts}} />
 
 </template>

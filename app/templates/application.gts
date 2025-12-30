@@ -13,9 +13,9 @@ import { LinkTo } from '@ember/routing';
   <nav class="m-2 bg-pink-300 text-white">
     <ul class="inline">
       <li><LinkTo @route="projects">works</LinkTo></li>
-      <li>music</li>
-      <li>blag</li>
-      <li>contact</li>
+      <li><LinkTo @route="music">music</LinkTo></li>
+      <li><LinkTo @route="blog">blag</LinkTo></li>
+      <li><LinkTo @route="contact">contact</LinkTo></li>
     </ul>
   </nav>
 

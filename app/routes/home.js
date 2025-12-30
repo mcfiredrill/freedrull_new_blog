@@ -5,7 +5,7 @@ export default class HomeRoute extends Route {
   @service posts;
 
   async model() {
-    return this.posts.getAll();
+    return this.posts.getPage();
   }
 
 }
