@@ -1,4 +1,5 @@
 import PostList from 'freedrull_blog/components/post-list';
+import Pagination from 'freedrull_blog/components/pagination';
 
 <template>
   check out this cool 3d animation in the background
@@ -12,5 +13,10 @@ import PostList from 'freedrull_blog/components/post-list';
   latest blag:
   {{log @model}}
   <PostList @posts={{@model.posts}} />
+
+  <Pagination
+      @totalPages={{@model.totalPages}}
+      @page={{@model.page}}
+      @route="home" />
 
 </template>
