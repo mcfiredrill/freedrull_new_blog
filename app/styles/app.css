@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+body {
+  background: url("/assets/images/checks.gif");
+}
+
 @font-face {
   font-family: debussy;
   src:
@@ -14,7 +18,10 @@
   --font-debussy: "debussy", sans-serif;
 }
 
-  img {
-    @apply max-h-64 object-contain;
-  }
+img {
+  @apply max-h-64 object-contain;
+}
 
+a {
+  text-decoration: underline;
+}

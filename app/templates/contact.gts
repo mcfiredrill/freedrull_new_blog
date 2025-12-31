@@ -10,5 +10,7 @@ interface ContactSignature {
 
 <template>
   {{pageTitle "Contact"}}
-  {{outlet}}
+  <ul>
+    <li><a href="mailto:mcfiredrill@gmail.com">E-mails</a></li>
+  </ul>
 </template> satisfies TOC<ContactSignature>;
