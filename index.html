@@ -1,32 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Freedrull Blog</title>
-  <meta name="description" content="">
+  <title>freedrull</title>
+  <meta name="description" content="freedrull - firedrill's home page">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {{content-for "head"}}
+  <style>
+    @font-face {
+      font-family: debussy;
+      src:
+        url('/assets/fonts/hinted-Debussy.woff2') format('woff2'),
+        url('/assets/fonts/hinted-Debussy.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
 
-  <link integrity="" rel="stylesheet" href="/@embroider/virtual/vendor.css">
-  <link integrity="" rel="stylesheet" href="/app/styles/app.css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  {{content-for "head-footer"}}
+    body {
+      background: url("/assets/images/checks.gif");
+      font-family: debussy, sans-serif;
+      color: #111;
+      padding: 2rem;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .content {
+      background: rgba(220, 220, 220, 0.9);
+      padding: 1.5rem;
+      border-radius: 4px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #111;
+    }
+
+    a:hover {
+      color: #555;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .projects {
+      margin-bottom: 2rem;
+    }
+
+    .projects ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    .projects li {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+
+    .socials {
+      margin-bottom: 2rem;
+    }
+
+    .socials ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .socials li {
+      font-size: 1.05rem;
+    }
+
+    .header-images {
+      margin-bottom: 1rem;
+    }
+
+    .header-images img {
+      display: inline;
+      height: 2rem;
+    }
+
+    .contact {
+      font-size: 1rem;
+    }
+  </style>
 </head>
 
 <body>
-  {{content-for "body"}}
+  <div class="content">
+  <div class="header-images">
+    <img src="/assets/images/me_scary.jpg" alt="me scary" />
+    <img src="/assets/images/freaky_green_spin.gif" alt="freaky green spin" />
+  </div>
 
-  <script src="/@embroider/virtual/vendor.js"></script>
-  <script type="module">
-    import Application from './app/app';
-    import environment from './app/config/environment';
+  <div class="intro">
+    <p>
+      hi i'm firedrill or freedrull. i work on
+      <a href="https://datafruits.fm/" target="_blank" rel="noopener">datafruits.fm</a>, an internet radio station.
+      <a href="https://cybertomato.xyz/" target="_blank" rel="noopener">cyber tomato soft</a>, a video games company.
+      also I stream as a vtuber named
+      <a href="https://twitch.tv/freedrull_" target="_blank" rel="noopener">Hamburger Salaryman</a>.
+    </p>
+  </div>
 
-    Application.create(environment.APP);
-  </script>
+  <div class="projects">
+    <h2>projects</h2>
+    <ul>
+      <li><a href="https://datafruits.fm/" target="_blank" rel="noopener">datafruits.fm</a> - internet radio station</li>
+      <li><a href="https://cybertomato.xyz/" target="_blank" rel="noopener">cybertomato.xyz</a> - video games</li>
+    </ul>
+  </div>
 
-  {{content-for "body-footer"}}
+  <div class="socials">
+    <h2>links</h2>
+    <ul>
+      <li><a href="https://twitch.tv/freedrull_" target="_blank" rel="noopener">twitch</a></li>
+      <li><a href="https://www.youtube.com/@mcfiredrill" target="_blank" rel="noopener">youtube</a></li>
+      <li><a href="https://freedrull.itch.io/" target="_blank" rel="noopener">itch.io</a></li>
+      <li><a href="https://twitter.com/freedrull" target="_blank" rel="noopener">twitter</a></li>
+      <li><a href="https://bsky.app/profile/freedrull.bsky.social" target="_blank" rel="noopener">bluesky</a></li>
+    </ul>
+  </div>
+
+  <div class="contact">
+    <p>contact: mcfiredrill at gmail dot com</p>
+  </div>
+  </div>
 </body>
 
 </html>
